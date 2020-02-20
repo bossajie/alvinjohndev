@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
+$text-shadow: 1px 1px 1px rgb(165, 165, 161);
+html, body{
+	height: 100%;
+	width: 100%;
+	color: #222222;
+	scroll-behavior: smooth;
+}
+.navbar{
+	padding: 0.1rem;
+	font-size: 1rem;
+	background: #333333;
+		-moz-box-shadow: 2px 2px 2px 3px #333333;
+		-webkit-box-shadow: 2px 2px 2px 3px #333333;
+	box-shadow: 2px 2px 2px 3px #333333;
+	ul{
+		display: flex;
+		justify-content: flex-end;
+		list-style: none;
+	}
+	li{
+		text-align: center;
+		padding-right: 20px;
+		color: white;
+	}
+	.navbar-toggler-icon{
+		color: white;
+	}
+	.nav-link{
+		font-size: 1.1em !important;
+	}
+	.nav-item, .navbar-brand h3{
+		text-shadow: $text-shadow;
+		color: rgb(255, 255, 255);
+	}
+	.nav-item a:hover{
+		// color: #c2c0c0 !important;
+		border-bottom: #858585 solid 2px;
+	}
+	.navbar-brand h3{
+		font-family: 'Squada One', cursive;
+		font-size: 3rem;
+	  }
+	.navbar-brand span{
+		color : #F0129B;
+	}
+}
+
+
+#introduction{
+	background-image: url('/static/images/2.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 600px;
+	text-align: center;
+	color: white;
+	h1, h2, h3{
+		font-family: 'Squada One', cursive;
+		text-align: left;
+		margin-left: 2rem;
+	}
+	h1{
+		text-shadow: $text-shadow;
+		font-size: 8rem;
+		margin-bottom: -2rem;
+	}
+	h2{
+		font-size: 7.4rem;
+	}
+	h3 {
+		font-family: 'Squada One', cursive;
+		font-size: 5rem;
+		text-shadow: $text-shadow;
+	}
+}
+#welcome{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2rem;
+	hr {
+		border-top: 2px solid #b4b4b4;
+		width: 95%;
+		margin-top: .3rem;
+		margin-bottom: 1rem;
+	}
+}
+
+#contact-me{
+	.fa-envelope, .fa-skype, .fa-telegram {
+		font-size: 25px;
+		color : #3b5998;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+}
+.social a{
+	font-size : 4.5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	.fa-facebook {
+		color: #3b5998;
+	  }
+	.fa-twitter {
+		color: #00aced;
+	}
+	.fa-linkedin{
+		color: #0e76a8;
+	}
+	.fa-github{
+		color: #333;
+	}
+}
+
+.jumbotron {
+	padding: 2.5rem;
+	border-radius: 0;
+}
+
+.display-4{
+	font-family: 'Squada One', cursive;
+	font-size: 5rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+	/* desktop */
+	.social a{
+	  font-size: 4em;
+	  padding: 2rem;
+	}
+  
+  }
+  @media (max-width: 768px) {
+	/* tablet */
+	#introduction{
+		height: 400px;
+		h1{
+			font-size: 800%
+		}
+		h2{
+			font-size: 730%;
+		}
+		h3{
+			font-size: 250%;
+		}
+	}
+	.display-4 {
+	  font-size: 200%;
+	}
+	.social a{
+	  font-size: 2.5em;
+	  padding: 1.2rem;
+	}
+	.navbar-nav li{
+	  text-align: center;
+	}
+  }
+  @media (max-width: 576px) {
+	/* mobile */
+	#introduction{
+		height: 250px;
+		h1{
+			font-size: 450%
+		}
+		h2{
+			font-size: 420%;
+		}
+		h3{
+			font-size: 200%;
+		}
+	}
+	.jumbotron {
+		padding: 1rem
+	}
+	
+	.display-4 {
+	  font-size: 250%;
+	}
+	.social p{
+	  font-size: 1rem;
+	}
+	.social a{
+	  font-size: 2em;
+	  padding: 0.7rem;
+	}
+  }
+  
